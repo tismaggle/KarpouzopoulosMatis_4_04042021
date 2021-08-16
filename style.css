@@ -48,6 +48,7 @@ a:hover {
 
 .bloc-lg {
     padding: 100px 50px;
+    margin: auto;
 }
 
 .bloc-md {
@@ -487,6 +488,7 @@ button {
 
 .sm-shadow {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    width: 60px;
 }
 
 .panel-sq,
@@ -653,13 +655,13 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
 }
 
 .description_title, .contact_title {
     font-weight: 500;
     text-transform: none;
-    color: #575757!important;
+    color: #000000!important;
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
@@ -674,7 +676,7 @@ a {
 
 q {
     font-size: 2rem;
-    color: #575757!important;
+    color: #000000!important;
     font-style: italic;
     font-weight: 300;
 }
@@ -757,6 +759,8 @@ h4 {
     color: #333333!important;
 }
 
+blockquote p {font-size: 22px;font-style: italic;}
+cite {font-size: 15px;font-style: normal;color: #000000;}
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -770,9 +774,13 @@ h4 {
     margin-bottom: 24px;
 }
 
-.portfolio-row {
+.col-sm-6 {
     margin-bottom: 44px;
     margin-top: 50px;
+}
+
+.col-sm-4 {
+    margin-top: 30px;
 }
 
 .avatar {
@@ -800,11 +808,10 @@ h4 {
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
-
+li {color: white;}
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
-
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
@@ -824,7 +831,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #fccf6f!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -875,13 +882,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -899,10 +906,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -911,16 +914,17 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
-
+.img-responsive{width: 100%;}
 @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
     }
+    .description_title {margin: 0px 50px;}
+    blockquote {margin: 20px 50px 0px 50px;text-align: center;}
+    .text-center {padding: 0px;}
     h1,
     h2,
     h3,
