@@ -103,7 +103,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255);
 }
 
 .d-bloc button:hover {
@@ -784,6 +784,7 @@ cite {font-size: 15px;font-style: normal;color: #000000;}
 
 .col-sm-4 {
     margin-top: 30px;
+    margin-left: 30px;
 }
 
 .avatar {
