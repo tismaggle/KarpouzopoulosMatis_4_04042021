@@ -655,9 +655,12 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #000000!important;
+    color: #000000;
 }
 
+.partners{
+    color: #fff;}
+.partners:hover{text-decoration: underline;}
 .description_title, .contact_title {
     font-weight: 500;
     text-transform: none;
@@ -806,19 +809,20 @@ cite {font-size: 15px;font-style: normal;color: #000000;}
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #CD4B0E;
 }
+.bgc-atomic-tangerine:hover {text-decoration: underline;}
 li {color: white;}
 .tc-white {
     color: white!important;
 }
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #CD4B0E;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #CD4B0E!important;
     color: #FFFFFF!important;
 }
 
